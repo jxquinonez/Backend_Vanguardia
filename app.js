@@ -1,9 +1,12 @@
 'use strict'
 
 var express = require('express');
+var cors = require('cors')
 
 //Ejecutar Express
 var app = express();
+app.use(cors())
+
 
 var colegio_routes = require('./routes/colegio');
 var usuario_routes = require('./routes/usuario');

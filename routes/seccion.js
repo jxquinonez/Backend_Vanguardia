@@ -11,6 +11,7 @@ router.get('/seccions', SeccionController.getSecciones);
 router.get('/seccion/:id', SeccionController.getSeccion);
 router.get('/seccion/docente/:docente', SeccionController.getSeccionDocente);
 router.get('/seccion/alumnos/:nombre', SeccionController.getSeccionAlumno);
-router.put('/seccion/:id', SeccionController.update);
+router.put('/seccion/actualizar/:id', SeccionController.update);
+router.delete('/seccion/:id', SeccionController.delete);
 
 module.exports = router;
